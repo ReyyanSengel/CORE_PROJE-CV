@@ -1,0 +1,45 @@
+﻿@model WriterMessage
+@{
+    ViewData["Title"] = "AdminMessageDetails";
+    Layout = "~/Views/Shared/_NewLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+
+            <form asp-action="ViewMessage">
+                <input type="hidden" asp-for="WriterMessageID" />
+                <div>
+                    <label><b>Başlık</b></label>
+                    <input type="text" asp-for="Subject" class="form-control" />
+                </div>
+                <br />
+                <div>
+                    <label><b>Gönderen Adı</b></label>
+                    <input type="text" asp-for="SenderName" class="form-control" />
+                </div>
+                <br />
+                <div>
+                    <label><b>Alıcı Adı</b></label>
+                    <input type="text" asp-for="ReceiverName" class="form-control" />
+                </div>
+                <br />
+                <div>
+                    <label><b>Tarih</b></label>
+                    <input type="text" asp-for="Date" class="form-control" />
+                </div>
+                <br />
+                <div>
+                    <label><b>Mesaj</b></label>
+                    <textarea class="form-control" asp-for="MessageContent"></textarea>
+                </div>
+                <br />
+                <a class="btn btn-inverse-info" asp-action="ReceiverMessageList">Mesaj Gelen Kutusu</a>
+                <a class="btn btn-inverse-warning" asp-action="SenderMessageList">Mesaj Giden Kutusu</a>
+
+            </form>
+
+        </div>
+    </div>
+</div>

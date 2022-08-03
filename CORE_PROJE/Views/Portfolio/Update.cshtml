@@ -1,0 +1,43 @@
+﻿@model Portfolio
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_NewLayout.cshtml";
+}
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <p class="card-description">Proje Düzenleme Paneli</p>
+            <form class="forms-sample" asp-action="Update" method="post">
+                <input type="hidden" asp-for="PortfolioID" />
+                <div class="form-group">
+                    <label asp-for="Name">Güncellenecek Proje</label>
+                    <input class="form-control" type="text" asp-for="Name" />
+                    <span asp-validation-for="Name"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Platform">Platform</label>
+                    <input class="form-control" type="text" asp-for="Platform" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Price">Ücret</label>
+                    <input class="form-control" type="text" asp-for="Price" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Status">Durum</label>
+                    <input class="form-control" type="text" asp-for="Status" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Value">Tamamlanma Oranı</label>
+                    <input class="form-control" type="text" asp-for="Value" />
+                    <span asp-validation-for="Value"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Kaydet</button>
+            </form>
+        </div>
+    </div>
+</div>
+

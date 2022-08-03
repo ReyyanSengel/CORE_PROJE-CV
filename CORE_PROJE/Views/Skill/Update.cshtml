@@ -1,0 +1,32 @@
+﻿@model Skill
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_NewLayout.cshtml";
+}
+
+
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+
+            <p class="card-description"> Yetenek Güncelleme Paneli </p>
+            <form asp-action="Update" class="forms-sample">
+                <input type="hidden" asp-for="SkillID" />
+                <div class="form-group">
+                    <label asp-for="Title">Güncellenecek Yetenek</label>
+                    <input type="text" class="form-control" asp-for="Title">
+                </div>
+                <div class="form-group">
+                    <label asp-for="Value">Değer</label>
+                    <input type="text" class="form-control" asp-for="Value">
+                </div>
+
+
+                <button type="submit" class="btn btn-primary mr-2">Kaydet</button>
+                <button class="btn btn-dark">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>
+

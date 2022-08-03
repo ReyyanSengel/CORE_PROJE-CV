@@ -1,0 +1,36 @@
+﻿@model Contact
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_NewLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+
+            <p class="card-description">Alt İletişim Paneli</p>
+            <form asp-action="Index" class="forms-sample" method="post">
+                <input type="hidden" asp-for="ContactID" />
+                <div class="form-group">
+                    <label asp-for="Title"> Başlık</label>
+                    <input class="form-control" type="text" asp-for="Title" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Phone">Telefon</label>
+                    <input class="form-control" type="text" asp-for="Phone" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Mail">Mail</label>
+                    <input class="form-control" type="text" asp-for="Mail" />
+                </div>
+              
+                <div class="form-group">
+                    <label asp-for="Description">Açıklama</label>
+                    <textarea class="form-control" asp-for="Description" r></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mr-2">Kaydet</button>
+                <button class="btn btn-dark">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>

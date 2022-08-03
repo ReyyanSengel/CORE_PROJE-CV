@@ -1,0 +1,46 @@
+﻿@model Portfolio
+@{
+    ViewData["Title"] = "AddPortfolio";
+    Layout = "~/Views/Shared/_NewLayout.cshtml";
+}
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Proje Ekleme Sayfası</h3>
+</div>
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+
+            <p class="card-description">Proje Ekleme Paneli</p>
+            <form asp-action="AddPortfolio" class="forms-sample">
+                <div class="form-group">
+                    <label asp-for="Name">Eklenecek Proje</label>
+                    <input type="text" class="form-control" asp-for="Name">
+                    <span asp-validation-for="Name"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Price">Ücret</label>
+                    <input type="text" class="form-control" asp-for="Price">
+                </div>
+                <div class="form-group">
+                    <label asp-for="Status">Durum</label>
+                    <input type="text" class="form-control" asp-for="Status">
+                </div>
+                <div class="form-group">
+                    <label asp-for="Value">Değer</label>
+                    <input type="text" class="form-control" asp-for="Value">
+                    <span asp-validation-for="Value"></span>
+                </div>
+
+
+                <button type="submit" class="btn btn-primary mr-2">Kaydet</button>
+                <button class="btn btn-dark">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>

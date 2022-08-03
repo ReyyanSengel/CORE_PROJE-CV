@@ -1,0 +1,29 @@
+﻿@model Service
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_NewLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+
+            <p class="card-description"> Hizmet Güncelleme Paneli </p>
+            <form asp-action="Update" class="forms-sample">
+                <div class="form-group">
+                    <label asp-for="Title">Hizmet Adı</label>
+                    <input type="text" class="form-control" asp-for="Title">
+                </div>
+                <div class="form-group">
+                    <label asp-for="ImageUrl">Resim Yolu</label>
+                    <input type="text" class="form-control" asp-for="ImageUrl">
+                </div>
+
+
+                <button type="submit" class="btn btn-primary mr-2">Kaydet</button>
+                <button class="btn btn-dark">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>
+

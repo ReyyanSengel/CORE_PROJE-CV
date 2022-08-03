@@ -1,0 +1,22 @@
+﻿@model WriterMessage
+@{
+    ViewData["Title"] = "ReceiverMesssageDetails";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+
+<div class="card-header ">
+    <h3>Mesaj Detayları</h3>
+</div>
+<br />
+<form class="form-group" asp-action="ReceiverMesssageDetails">
+    <input class="form-control" type="hidden" asp-for="WriterMessageID" />
+    <label><b>Alıcı Adı</b></label>
+    <input class="form-control" type="text" asp-for="ReceiverName" />
+    <br />
+    <label><b>Alıcı Mail</b></label>
+    <input class="form-control" type="text" asp-for="Receiver" />
+    <br />
+    <label><b>Mesaj</b></label>
+    <textarea class="form-control" asp-for="MessageContent"></textarea>
+</form>

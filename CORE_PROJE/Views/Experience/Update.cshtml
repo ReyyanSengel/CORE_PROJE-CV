@@ -1,0 +1,39 @@
+﻿@model Experience
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_NewLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+
+            <p class="card-description">Deneyim Güncelleme Paneli </p>
+            <form asp-action="Update" class="forms-sample">
+                <div class="form-group">
+                    <label asp-for="ExperienceID">ID</label>
+                    <input type="text" class="form-control" asp-for="ExperienceID">
+                </div>
+                <div class="form-group">
+                    <label asp-for="Name">Düzenlenecek Deneyim</label>
+                    <input type="text" class="form-control" asp-for="Name">
+                </div>
+                <div class="form-group">
+                    <label asp-for="Date">Tarih</label>
+                    <input type="text" class="form-control" asp-for="Date">
+                </div>
+                <div class="form-group">
+                    <label asp-for="ImageUrl">Görsel URL</label>
+                    <input type="text" class="form-control" asp-for="ImageUrl">
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description">Açıklama</label>
+                    <textarea class="form-control" asp-for="Description" r></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mr-2">Kaydet</button>
+                <button class="btn btn-dark">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>
+

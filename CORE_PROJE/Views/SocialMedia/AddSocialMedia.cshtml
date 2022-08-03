@@ -1,0 +1,31 @@
+﻿@model SocialMedia
+@{
+    ViewData["Title"] = "AddSocialMedia";
+    Layout = "~/Views/Shared/_NewLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+
+                <p class="card-description"> Yeni Hesap Ekleme Paneli </p>
+                <form asp-action="AddSocialMedia" class="forms-sample">
+                    <div class="form-group">
+                        <label asp-for="Name">Eklenecek Hesap</label>
+                        <input type="text" class="form-control" asp-for="Name">
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Url">URL</label>
+                        <input type="text" class="form-control" asp-for="Url">
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Icon">İkon</label>
+                        <input type="text" class="form-control" asp-for="Icon">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary mr-2">Kaydet</button>
+                    <button class="btn btn-dark">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
