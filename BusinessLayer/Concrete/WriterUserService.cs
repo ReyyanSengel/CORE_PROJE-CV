@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class TestimonialManager : GenericService<Testimonial>, ITestimonialService
+    public class WriterUserService : GenericService<WriterUser>, IWriterUserService
     {
-        public TestimonialManager(IGenericRepository<Testimonial> repository, IUnitOfWork unitOfWork) : base(repository, unitOfWork)
+        public WriterUserService(IGenericRepository<WriterUser> repository, IUnitOfWork unitOfWork) : base(repository, unitOfWork)
         {
         }
     }

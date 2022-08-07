@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class SkillManager : GenericService<Skill>, ISkillService
+    public class SocialMediaService : GenericService<SocialMedia>, ISocialMediaService
     {
-        public SkillManager(IGenericRepository<Skill> repository, IUnitOfWork unitOfWork) : base(repository, unitOfWork)
+        public SocialMediaService(IGenericRepository<SocialMedia> repository, IUnitOfWork unitOfWork) : base(repository, unitOfWork)
         {
         }
     }

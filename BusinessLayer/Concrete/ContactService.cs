@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class ToDoListManager : GenericService<ToDoList>, IToDoListService
+    public class ContactService : GenericService<Contact>, IContactService
     {
-        public ToDoListManager(IGenericRepository<ToDoList> repository, IUnitOfWork unitOfWork) : base(repository, unitOfWork)
+        public ContactService(IGenericRepository<Contact> repository, IUnitOfWork unitOfWork) : base(repository, unitOfWork)
         {
         }
     }

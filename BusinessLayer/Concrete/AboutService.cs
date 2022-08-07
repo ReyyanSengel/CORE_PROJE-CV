@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class MessageManager : GenericService<Message>, IMessageService
+    public class AboutService : GenericService<About>, IAboutService
     {
-        public MessageManager(IGenericRepository<Message> repository, IUnitOfWork unitOfWork) : base(repository, unitOfWork)
+        public AboutService(IGenericRepository<About> repository, IUnitOfWork unitOfWork) : base(repository, unitOfWork)
         {
         }
     }

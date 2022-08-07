@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class PortfolioManager : GenericService<Portfolio>, IPortfolioService
+    public class FeatureService : GenericService<Feature>, IFeatureService
     {
-        public PortfolioManager(IGenericRepository<Portfolio> repository, IUnitOfWork unitOfWork) : base(repository, unitOfWork)
+        public FeatureService(IGenericRepository<Feature> repository, IUnitOfWork unitOfWork) : base(repository, unitOfWork)
         {
         }
     }

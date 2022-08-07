@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class WriterUserManager : GenericService<WriterUser>, IWriterUserService
+    public class ServiceService : GenericService<Service>, IServiceService
     {
-        public WriterUserManager(IGenericRepository<WriterUser> repository, IUnitOfWork unitOfWork) : base(repository, unitOfWork)
+        public ServiceService(IGenericRepository<Service> repository, IUnitOfWork unitOfWork) : base(repository, unitOfWork)
         {
         }
     }

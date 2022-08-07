@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class ExperienceManager : GenericService<Experience>, IExperienceService
+    public class AnnouncementService : GenericService<Announcement>, IAnnouncementService
     {
-        public ExperienceManager(IGenericRepository<Experience> repository, IUnitOfWork unitOfWork) : base(repository, unitOfWork)
+        public AnnouncementService(IGenericRepository<Announcement> repository, IUnitOfWork unitOfWork) : base(repository, unitOfWork)
         {
         }
     }

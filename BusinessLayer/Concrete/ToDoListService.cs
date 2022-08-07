@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class SocialMediaManager : GenericService<SocialMedia>, ISocialMediaService
+    public class ToDoListService : GenericService<ToDoList>, IToDoListService
     {
-        public SocialMediaManager(IGenericRepository<SocialMedia> repository, IUnitOfWork unitOfWork) : base(repository, unitOfWork)
+        public ToDoListService(IGenericRepository<ToDoList> repository, IUnitOfWork unitOfWork) : base(repository, unitOfWork)
         {
         }
     }

@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class WriterMessageManager : GenericService<WriterMessage>,IWriterMessageService
+    public class WriterMessageService : GenericService<WriterMessage>,IWriterMessageService
     {
         private readonly IWriterMessageRepository _writerMessageRepository;
-        public WriterMessageManager(IGenericRepository<WriterMessage> repository, IUnitOfWork unitOfWork, IWriterMessageRepository writerMessageRepository) : base(repository, unitOfWork)
+        public WriterMessageService(IGenericRepository<WriterMessage> repository, IUnitOfWork unitOfWork, IWriterMessageRepository writerMessageRepository) : base(repository, unitOfWork)
         {
             _writerMessageRepository = writerMessageRepository;
         }

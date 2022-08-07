@@ -37,37 +37,37 @@ namespace CORE_PROJE
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews().AddFluentValidation(x=>x.RegisterValidatorsFromAssemblyContaining<PortfolioValidator>());
-            services.AddScoped(typeof( IGenericRepository<>),typeof( GenericRepository<>));
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddScoped<IAboutRepository, AboutRepository>();
-            services.AddScoped<IContactRepository, ContactRepository>();
-            services.AddScoped<IExperienceRepository, ExperienceRepository>();
-            services.AddScoped<IFeatureRepository, FeatureRepository>();
-            services.AddScoped<IMessageRepository, MessageRepository>();
-            services.AddScoped<IPortfolioRepository, PortfolioRepository>();
-            services.AddScoped<IServiceRepository, ServiceRepository>();
-            services.AddScoped<ISkillRepository, SkillRepository>();
-            services.AddScoped<ISocialMediaRepository, SocialMediaRepository>();
-            services.AddScoped<ITestimonialRepository, TestimonialRepository>();
-            services.AddScoped<IToDoListRepository, ToDoListRepository>();
-            services.AddScoped<IAnnouncementRepository, AnnouncementRepository>();
-            services.AddScoped<IWriterMessageRepository, WriterMessageRepository>();
-            services.AddScoped<IWriterUserRepository, WriterUserRepository>();
-            services.AddScoped(typeof(IGenericService<>), typeof(GenericService<>));
-            services.AddScoped<IFeatureService, FeatureManager>();
-            services.AddScoped<IAboutService, AboutManager>();
-            services.AddScoped<IContactService, ContactManager>();
-            services.AddScoped<IExperienceService, ExperienceManager>();
-            services.AddScoped<IMessageService, MessageManager>();
-            services.AddScoped<IPortfolioService, PortfolioManager>();
-            services.AddScoped<IServiceService, ServiceManager>();
-            services.AddScoped<ISkillService, SkillManager>();
-            services.AddScoped<ISocialMediaService, SocialMediaManager>();
-            services.AddScoped<ITestimonialService, TestimonialManager>();
-            services.AddScoped<IToDoListService, ToDoListManager>();
-            services.AddScoped<IAnnouncementService, AnnouncementManager>();
-            services.AddScoped<IWriterMessageService, WriterMessageManager>();
-            services.AddScoped<IWriterUserService, WriterUserManager>();
+            //services.AddScoped(typeof( IGenericRepository<>),typeof( GenericRepository<>));
+            //services.AddScoped<IUnitOfWork, UnitOfWork>();
+            //services.AddScoped<IAboutRepository, AboutRepository>();
+            //services.AddScoped<IContactRepository, ContactRepository>();
+            //services.AddScoped<IExperienceRepository, ExperienceRepository>();
+            //services.AddScoped<IFeatureRepository, FeatureRepository>();
+            //services.AddScoped<IMessageRepository, MessageRepository>();
+            //services.AddScoped<IPortfolioRepository, PortfolioRepository>();
+            //services.AddScoped<IServiceRepository, ServiceRepository>();
+            //services.AddScoped<ISkillRepository, SkillRepository>();
+            //services.AddScoped<ISocialMediaRepository, SocialMediaRepository>();
+            //services.AddScoped<ITestimonialRepository, TestimonialRepository>();
+            //services.AddScoped<IToDoListRepository, ToDoListRepository>();
+            //services.AddScoped<IAnnouncementRepository, AnnouncementRepository>();
+            //services.AddScoped<IWriterMessageRepository, WriterMessageRepository>();
+            //services.AddScoped<IWriterUserRepository, WriterUserRepository>();
+            //services.AddScoped(typeof(IGenericService<>), typeof(GenericService<>));
+            //services.AddScoped<IFeatureService, FeatureService>();
+            //services.AddScoped<IAboutService, AboutService>();
+            //services.AddScoped<IContactService, ContactService>();
+            //services.AddScoped<IExperienceService, ExperienceService>();
+            //services.AddScoped<IMessageService, MessageService>();
+            //services.AddScoped<IPortfolioService, PortfolioService>();
+            //services.AddScoped<IServiceService, ServiceService>();
+            //services.AddScoped<ISkillService, SkillService>();
+            //services.AddScoped<ISocialMediaService, SocialMediaService>();
+            //services.AddScoped<ITestimonialService, TestimonialService>();
+            //services.AddScoped<IToDoListService, ToDoListManager>();
+            //services.AddScoped<IAnnouncementService, AnnouncementService>();
+            //services.AddScoped<IWriterMessageService, WriterMessageService>();
+            //services.AddScoped<IWriterUserService, WriterUserService>();
 
            
             services.AddDbContext<Context>(x =>
